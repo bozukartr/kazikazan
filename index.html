@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazı Kazan Oyunu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="flip-container">
+            <div class="flipper">
+                <div class="front">
+                    <div class="scratch-card">
+                        <div class="header">
+                            <div class="logo">
+                                <img src="lotologo.png" alt="Kazı Kazan">
+                            </div>
+                            <div class="main-prize">
+                                BÜYÜK İKRAMİYE <span>8.000.000</span>TL
+                            </div>
+                            <div class="card-price">
+                                100 TL
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <div class="left-section">
+                                <div class="prize-table">
+                                    <h3>İKRAMİYE TABLOSU</h3>
+                                    <ul>
+                                        <li>3x 🏆 = 8.000.000 TL</li>
+                                        <li>3x 💎 = 5.000 TL</li>
+                                        <li>3x 🍀 = 1.000 TL</li>
+                                        <li>3x 🧲 = 500 TL</li>
+                                        <li>3x 🔑 = 250 TL</li>
+                                        <li>3x 🐞 = 100 TL</li>
+                                    </ul>
+                                </div>
+
+                                <div class="bonus-section">
+                                    <div class="bonus-title">BONUS OYUN</div>
+                                    <div class="bonus-subtitle">İKRAMİYE</div>
+                                    <div id="bonus"></div>
+                                </div>
+                            </div>
+
+                            <div class="right-section">
+                                <div class="stars-grid">
+                                    <div class="row" id="row1">
+                                        <span class="row-number">1. SIRA</span>
+                                        <div class="prize-overlay"></div>
+                                    </div>
+                                    <div class="row" id="row2">
+                                        <span class="row-number">2. SIRA</span>
+                                        <div class="prize-overlay"></div>
+                                    </div>
+                                    <div class="row" id="row3">
+                                        <span class="row-number">3. SIRA</span>
+                                        <div class="prize-overlay"></div>
+                                    </div>
+                                    <div class="row" id="row4">
+                                        <span class="row-number">4. SIRA</span>
+                                        <div class="prize-overlay"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="serial-number" id="serialNumber"></div>
+                            <div class="rules-note">Oyun kuralları kartın arkasındadır.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="scratch-card rules-card">
+                        <div class="rules-header">
+                            <h2>Oyun Kuralları</h2>
+                        </div>
+                        <div class="rules-content">
+                            <div class="rules-section">
+                                <h3>Nasıl Oynanır?</h3>
+                                <ul>
+                                    <li>Her kartta 4 sıra ve bonus bölümü bulunur</li>
+                                    <li>Yıldızların üzerine tıklayarak sembolleri ortaya çıkarın</li>
+                                    <li>Aynı sırada 3 adet aynı sembol bulduğunuzda kazanırsınız</li>
+                                    <li>Bonus bölümünde para sembolü çıkarsa ekstra kazanç!</li>
+                                    <li>"Hepsini Kazı" butonu ile tüm sembolleri tek seferde açabilirsiniz</li>
+                                </ul>
+                            </div>
+                            <div class="rules-section">
+                                <h3>Bonus Oyun</h3>
+                                <p>💵 Para sembolü çıkarsa gösterilen miktarı kazanırsınız!</p>
+                                <p>Bonus kazanç aralığı: 100 TL - 40.000 TL</p>
+                            </div>
+                        </div>
+                        <div class="rules-footer">
+                            <button class="flip-back-btn">Karta Dön</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-group">
+            <button id="newGame">Yeni Oyun</button>
+            <button id="scratchAll">Hepsini Kazı</button>
+        </div>
+    </div>
+    
+    <div class="modal-overlay">
+        <div class="modal">
+            <h2 class="modal-title">Tebrikler!</h2>
+            <div class="modal-prize"></div>
+            <button class="modal-button">Yeni Oyun</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
